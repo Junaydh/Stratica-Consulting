@@ -10,7 +10,7 @@ const Navbar = () => {
   const [color, setColour] = useState('transparent')
   const [textColor, setTextColour] = useState('white')
 
-  const toggle = () => {
+  const toggleNav = () => {
     setIsOpen(!isOpen)
   }
 
@@ -49,7 +49,7 @@ const Navbar = () => {
           </li>
 
         </ul>
-        <div className='block sm:hidden z-10'>
+        <div onClick={toggleNav} className='block sm:hidden z-10'>
           {isOpen ? (<AiOutlineClose size={25} style={{ color: `${textColor}` }} />) : (<AiOutlineMenu size={25} style={{ color: `${textColor}` }} />)}
         </div>
         <div className={isOpen ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300' : 'sm:hidden absolute top-0 left-[100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'}>
