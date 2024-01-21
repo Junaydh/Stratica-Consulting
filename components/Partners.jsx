@@ -6,7 +6,7 @@ import Logo from './Logo'
 const Partners = () => {
   return (
     <div>
-      <div className='max-w-[1240px] mx-auto text-center py-24'>
+      <div className='max-w-[1240px] mx-auto text-center py-24 ml-2 mr-2'>
         <h1 className='text-4xl text-left font-bold text-gray-500 mb-5 underline underline-offset-8'>Our Partners</h1>
         <div className='grid grid-cols-2'>
           <Logo src={deen} alt='deen' />

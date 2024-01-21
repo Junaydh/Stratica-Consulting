@@ -35,16 +35,16 @@ const Navbar = () => {
           <Image src="/Designer.png" alt="logo" width={100} height={35} />
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          <li className='p-4'>
+          <li className='p-4 text-xl'>
             <Link href="/">Home</Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4 text-xl'>
             <Link href="/about">About</Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4 text-xl'>
             <Link href="/portfolio">Work</Link>
           </li>
-          <li className='p-4'>
+          <li className='p-4 text-xl'>
             <Link href="/contact">Contact</Link>
           </li>
 

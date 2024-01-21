@@ -10,7 +10,6 @@ const Blurb = () => {
         </p>
       </div>
     </div>
-
   )
 }
 
